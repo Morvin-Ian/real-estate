@@ -3,9 +3,11 @@
         <MainCardNav/>
         <el-row>
             <SubscriptionCard/>
-            <SubscriptionCard/>
-            
+            <WalletCard/>
+            <AdvertCarousel/>
         </el-row>
+
+
        
 
     </div>
@@ -14,13 +16,17 @@
 <script>
     import MainCardNav from '@/components/containers/MainCardNav.vue'
     import SubscriptionCard from '@/components/containers/cards/SubscriptionCard.vue'
+    import WalletCard from '@/components/containers/cards/WalletCard.vue'
+    import AdvertCarousel from '@/components/containers/carousels/AdvertCarousel.vue'
 
 
     export default{
         name: 'MainCard',
         components: {
             MainCardNav,
-            SubscriptionCard
+            SubscriptionCard,
+            WalletCard,
+            AdvertCarousel
         }
     }
 </script>

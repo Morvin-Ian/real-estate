@@ -20,8 +20,16 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { faWhatsappSquare } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faCopy } from '@fortawesome/free-regular-svg-icons'
+import { faMoneyCheckDollar } from '@fortawesome/free-solid-svg-icons'
+import { faCircle } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faSquareFacebook, faSquareInstagram, faSquareXTwitter, faUserCircle, faBell, faChevronDown, faWhatsappSquare, faLinkedin, faCopy)
+library.add(
+                faSquareFacebook,faMoneyCheckDollar,
+                faSquareInstagram, faSquareXTwitter, 
+                faUserCircle, faBell, faChevronDown, 
+                faWhatsappSquare, faLinkedin, faCopy,
+                faCircle
+            )
 
 createApp(App)
     .use(ElementPlus)

@@ -10,7 +10,7 @@
         <div class="btn">
             <ButtonHeader
                 style="color: orangered;"
-                label="Go to Sunscriptions"  
+                label="Go to Subscriptions"  
             />
         </div>
 
@@ -30,23 +30,23 @@
     }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     @import '@/assets/scss/variables.scss';
 
     .subscription-card{
-        padding: 20px;
+        padding: 30px;
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
         border-radius: 15px;
         margin-top: 15%;
-        margin-left: 5%;
-        height: 200px;
+        margin-left: 2%;
+        height: 150px;
         width: 30%;
         color: white;
         background-color:orangered;
 
         hr{
             color: white;
-            margin-bottom: 50px;
+            margin-bottom: 20px;
         }
 
         .balance{
