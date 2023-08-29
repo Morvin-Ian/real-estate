@@ -1,4 +1,30 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
+
+import router from '@/router'
+
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+import { faSquareXTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faUserCircle } from '@fortawesome/free-solid-svg-icons'
+import { faSquareInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faSquareFacebook } from '@fortawesome/free-brands-svg-icons'
+import { faBell } from '@fortawesome/free-regular-svg-icons'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { faWhatsappSquare } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faCopy } from '@fortawesome/free-regular-svg-icons'
+
+library.add(faSquareFacebook, faSquareInstagram, faSquareXTwitter, faUserCircle, faBell, faChevronDown, faWhatsappSquare, faLinkedin, faCopy)
+
+createApp(App)
+    .use(ElementPlus)
+    .use(router)
+    .component('font-awesome-icon', FontAwesomeIcon)
+    .mount('#app')

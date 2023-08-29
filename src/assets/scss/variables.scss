@@ -1,0 +1,103 @@
+$theme-colors: (
+  'primary': #00A0E9,
+  'primary-dark': #007BFF,
+  'primary-light': #cce4ff,
+  'primary-20': #e1f3fd,
+  'primary-10': #edf5ff,
+  'primary-bk': rgba(0, 100, 254, 0.05),
+  'black': #000,
+  'white': #fff,
+  'background-base': #f3f5f7,
+  'background-lite': rgba(25, 59, 103, 0.05),
+  'text-header': #192434,
+  'text-body': rgba(24, 39, 58, 0.94),
+  'text-secondary': rgba(27, 43, 65, 0.72),
+  'text-tertiary': rgba(28, 48, 74, 0.5),
+  'text-disabled': rgba(28, 52, 84, 0.26),
+  'text-error': #f52419,
+  'text-01': #192434,
+  'text-02': #263446,
+  'text-03': rgb(69, 73, 114),
+  'sub-text-01': #5a6676,
+  'sub-text-02': #77828f,
+  'sub-text-03': #8d97a4,
+  'sub-text-04': #c4cbd3,
+  'icon': rgba(28, 46, 69, 0.6),
+  'error': #ff4238,
+  'bk83': #414d5e,
+  'bk72': #5a6676,
+  'bk38': #a9b1bc,
+  'bk16': #dadfe4,
+  'bk10': #e9ecf0,
+  'bk5': #f3f5f7,
+  'red-color': #eb5757,
+  'orange-color': #f2994a,
+  'green-color': #219653,
+  'navbar-bg':rgb(16, 16, 65),
+  'shade-100': #192434,
+  'shade-90': rgba(24, 39, 58, 0.94),
+  'shade-80': rgba(26, 41, 61, 0.83),
+  'shade-70': rgba(27, 43, 65, 0.72),
+  'shade-60': rgba(28, 46, 69, 0.6),
+  'shade-50': rgba(28, 48, 74, 0.5),
+  'shade-40': rgba(28, 50, 79, 0.38),
+  'shade-30': rgba(28, 52, 84, 0.26),
+  'shade-20': rgba(28, 55, 90, 0.16),
+  'shade-10': rgba(26, 56, 96, 0.1),
+  'shade-5': rgba(25, 59, 103, 0.05),
+  'gray-100': #305468,
+  'gray-90': #446577,
+  'gray-80': #597786,
+  'gray-60': #8399A4,
+  'gray-30': #C1CCD2,
+  'gray-20': #D6DDE1,
+  'yellow-10': #F8F2DD,
+  'green-10': #DDEFE0,
+  'sns-text': white,
+  'google-btn-border': #ddd,
+  'facebook-btn': #4267B2,
+  'twitter-btn': #57ACED,
+  'github-btn': #181515,
+  'linkedin-btn': #0367AA,
+);
+
+* {
+  @each $name, $color in $theme-colors {
+    --color-#{$name}: #{$color};
+  }
+}
+
+$theme-font-size: (
+  'hedding1': 40px,
+  'hedding2': 28px,
+  'hedding3': 22px,
+  'hedding4': 18px,
+  'hedding5': 16px,
+  'hedding6': 13px,
+  'small-text': 12px,
+  'ex-small-text': 10px,
+);
+
+$theme-spacing-base: 4px;
+
+@function theme-spacing($value) {
+  @return $theme-spacing-base * $value;
+}
+
+$breakpoints: (
+    "sm": "screen and (max-width: 400px)",
+    "md": "screen and (max-width: 768px)",
+    "lg": "screen and (max-width: 1000px)",
+    "xl": "screen and (max-width: 1200px)",
+) !default;
+
+@mixin mq($breakpoint) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+      @content;
+  }
+}
+$full-width : 100%;
+$large-screen-padding : 10%;
+$PC-size : 950px;
+$min-height: 100vh;
+$background : linear-gradient(90deg, #647cea, #a2eeec);
