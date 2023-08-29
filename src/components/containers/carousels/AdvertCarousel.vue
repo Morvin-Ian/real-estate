@@ -19,8 +19,6 @@
         </div>
     </div>
 
-    <font-awesome-icon :icon="['fas', 'circle']" />
-
 </template>
 
 <script>
