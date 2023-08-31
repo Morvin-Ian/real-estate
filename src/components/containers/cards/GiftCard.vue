@@ -1,5 +1,5 @@
 <template>
-    <div class="gift-card">
+    <div class="gift-card"  draggable="true">
         <div class="gift-image">
             <img :src="image" alt="gift"/>
             <p class="gift-desc">Earn upto 5% commision when you invite a <br>  friend that invests with us</p>

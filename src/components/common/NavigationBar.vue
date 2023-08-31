@@ -12,15 +12,20 @@
         </div>
 
         <div class="logins">
-            <ButtonHeader
-                label="Login"
-                style="color: orangered;"
-            />  
+            <router-link to="/sign-in">
+                <ButtonHeader
+                    label="Login"
+                    style="color: orangered;"
+                />  
+            </router-link>
+        
+            <router-link to="/sign-up">
+                <ButtonHeader
+                    label="Sign Up"
+                    style="background-color: orangered; color: white; border: none; margin-left: 10px;"
+                />
+            </router-link>
             
-            <ButtonHeader
-                label="Sign Up"
-                style="background-color: orangered; color: white; border: none;"
-            />
         </div>
     </div>
     

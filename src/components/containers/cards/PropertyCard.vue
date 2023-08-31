@@ -49,6 +49,7 @@
         box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
         border-radius: 5px;
         width: 20%;
+        height: 250px;
         margin-left: 2%;
         margin-top: 2%;
         background-color: map-get($theme-colors , 'white' );

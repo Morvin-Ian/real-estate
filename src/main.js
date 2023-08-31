@@ -24,13 +24,21 @@ import { faMoneyCheckDollar } from '@fortawesome/free-solid-svg-icons'
 import { faCircle } from '@fortawesome/free-solid-svg-icons'
 import { faAccusoft } from '@fortawesome/free-brands-svg-icons'
 import { faCoins } from '@fortawesome/free-solid-svg-icons'
+import { faCalendarDays } from '@fortawesome/free-solid-svg-icons'
+import { faMoneyBills } from '@fortawesome/free-solid-svg-icons'
+import { faRightToBracket } from '@fortawesome/free-solid-svg-icons'
+import { faBookmark } from '@fortawesome/free-solid-svg-icons'
+import { faCircleChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faCircleChevronLeft } from '@fortawesome/free-solid-svg-icons'
 
 library.add(
                 faSquareFacebook,faMoneyCheckDollar,
                 faSquareInstagram, faSquareXTwitter, 
                 faUserCircle, faBell, faChevronDown, 
                 faWhatsappSquare, faLinkedin, faCopy,
-                faCircle, faAccusoft, faCoins
+                faCircle, faAccusoft, faCoins, faCalendarDays,
+                faRightToBracket, faMoneyBills, faBookmark,
+                faCircleChevronRight, faCircleChevronLeft
             )
 
 createApp(App)
